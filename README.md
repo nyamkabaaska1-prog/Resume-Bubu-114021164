@@ -1,1 +1,1 @@
-#These are the resume for git practices in the W2 of the information class
+#Add resume.html in website directory to view Resume
