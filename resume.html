@@ -33,6 +33,27 @@
             color: white;
             padding: 30px;
             text-align: center;
+            position: relative;
+        }
+        
+        .profile-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .profile-text {
+            flex: 1;
         }
         
         h1 {
@@ -133,19 +154,40 @@
             h1 {
                 font-size: 2rem;
             }
+            
+            .profile-image {
+                width: 120px;
+                height: 120px;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .profile-container {
+                flex-direction: row;
+                text-align: left;
+            }
+            
+            .profile-text {
+                padding-left: 30px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="resume-container">
         <header>
-            <h1>Bubu</h1>
-            <p class="title">College Student | Data Science Major</p>
-            <div class="contact-info">
-                <span>📧 114021164@asia.edu.tw</span>
-                <span>📱 (123) 456-7890</span>
-                <span>📍 University City, State</span>
-                <span>🔗 linkedin.com/in/bubu</span>
+            <div class="profile-container">
+                <img src="image01.jpeg" alt="Bubu's Profile Picture" class="profile-image">
+                <div class="profile-text">
+                    <h1>Bubu</h1>
+                    <p class="title">College Student | Data Science Major</p>
+                    <div class="contact-info">
+                        <span>📧 114021164@asia.edu.tw</span>
+                        <span>📱 (123) 456-7890</span>
+                        <span>📍 University City, State</span>
+                        <span>🔗 linkedin.com/in/bubu</span>
+                    </div>
+                </div>
             </div>
         </header>
         
