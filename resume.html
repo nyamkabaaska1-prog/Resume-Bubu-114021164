@@ -26,6 +26,21 @@
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
             overflow: hidden;
+            position: relative;
+        }
+        
+        .student-id {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 0.9rem;
+            z-index: 10;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         
         header {
@@ -50,6 +65,13 @@
             object-fit: cover;
             border: 4px solid white;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #777;
+            font-size: 0.9rem;
+            text-align: center;
         }
         
         .profile-text {
@@ -159,6 +181,11 @@
                 width: 120px;
                 height: 120px;
             }
+            
+            .student-id {
+                font-size: 0.8rem;
+                padding: 4px 8px;
+            }
         }
         
         @media (min-width: 768px) {
@@ -175,9 +202,13 @@
 </head>
 <body>
     <div class="resume-container">
+        <div class="student-id">114021164</div>
+        
         <header>
             <div class="profile-container">
-                <img src="image01.jpeg" alt="Bubu's Profile Picture" class="profile-image">
+                <div class="profile-image">
+                    Profile Image<br>image01.jpeg
+                </div>
                 <div class="profile-text">
                     <h1>Bubu</h1>
                     <p class="title">College Student | Data Science Major</p>
